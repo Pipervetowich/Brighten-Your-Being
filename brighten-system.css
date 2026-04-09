@@ -14,16 +14,17 @@ html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);font-size:16px;line-height:1.7;overflow-x:hidden;}
 
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(252,250,245,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--b-sage);padding:0 60px;height:78px;display:flex;align-items:center;justify-content:space-between;}
-.nav-logo img{height:40px;width:auto;}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--white);border-bottom:1px solid var(--b-sage);padding:0 60px;height:80px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo-img{height:56px;width:auto;display:block;}
 .nav-links{display:flex;gap:32px;list-style:none;align-items:center;}
-.nav-links a{font-size:11px;font-weight:500;letter-spacing:0.11em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color 0.2s;}
-.nav-links a:hover{color:var(--sage-mid);}
+.nav-links a{font-size:12px;font-weight:500;letter-spacing:0.11em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover{color:var(--sage-dark);}
+.nav-current{font-size:12px;font-weight:700;letter-spacing:0.11em;text-transform:uppercase;color:var(--sage-dark);cursor:default;border-bottom:2px solid var(--sage-dark);padding-bottom:2px;}
 .nav-cta{color:var(--white)!important;background:var(--sage-mid)!important;padding:11px 24px;border-radius:2px;transition:background 0.2s!important;}
 .nav-cta:hover{background:var(--sage-deep)!important;}
 
 /* ── HERO ── */
-.hero{min-height:100vh;padding-top:78px;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;}
+.hero{min-height:100vh;padding-top:80px;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;}
 .hero-left{padding:108px 64px 88px 80px;display:flex;flex-direction:column;justify-content:center;z-index:2;}
 .eyebrow{font-size:10.5px;font-weight:500;letter-spacing:0.17em;text-transform:uppercase;color:var(--sage);margin-bottom:20px;display:flex;align-items:center;gap:13px;}
 .eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--sage);}
